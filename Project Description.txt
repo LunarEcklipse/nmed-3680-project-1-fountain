@@ -1,0 +1,46 @@
+For this project, I wanted to do something a bit different. Stemming from the original idea of white noise, I ended up deciding to build an interactive water fountain.
+
+After ordering the necessary parts, I made the decision to use a joystick to precisely control the servo motor of the project which allowed the angle of the fountain to be fine tuned. I also ordered a set of water pumps
+built for fish tanks to use.
+
+This project faced a lot more issues than I anticipated. On top of the code being relatively complex due to the debug requirements of it (the code ended up being surprisingly complex), the mechanics of the project proved surprisingly
+challenging as well. While I originally constructed the device out of thin plywood, it proved too heavy for the servo I used, which led me to change to 3D printed plastic. Unfortunately I could not get the servo to rotate correctly
+with this either unless the plastic was printed so thin as to be brittle for a moving part, so I moved on to styrofoam instead, which I waterproofed with plastic sheeting and duct tape.
+
+While I was happy with the final project (approximately 10 hours of work to program, prototype, and assemble), there was a lot of places where I've since realized I could improve. The styrofoam apparatus was flimsy and did not
+stand upright very well. I tried to remedy this by using wood plates in the final construction, but this only partially resolved the issue. What I should have done is used a larger servo motor which could fully support the large
+apparatus or made a more permanently secured connection (I tried to avoid gluing or otherwise permanently attaching any electrical parts so they could be reused). I could have also assembled a track for the device to run on.
+In addition, soldering skills would have come in handy, as I frequently had trouble with wires moving during operation, especially since the servo motor was the only thing supporting the upper half of the apparatus. While the
+joystick worked well for determining the direction of the fountain, it did not work great in combination with the servo as it was only capable of rotating 180 degrees to the 360 degrees of the joystick. Finally, the 5V connection
+powered via the Arduino did not actually prove sufficient to power the entire circuit. The water pump when turned on via button did not have enough power (it did not have a separate wire to toggle on and off, only a power and ground)
+to actually pump the water upwards, so I had to reroute the pump to a direct 5V line to sufficiently push water.
+
+Ultimately, I am a bit conflicted on the result of this project. A large part of the aesthetic was lost in pursuit of functionality, and in hindsight I could have simplified many parts of the design to make it work more efficiently
+and look nicer at the end of the day. However, I am happy with it in terms of functionality, as it was a refreshingly challenging piece to construct and implement, and I hope that it stands out against some of the other designs for
+this project.
+
+To interact with the project, the device must first be turned on by pressing the left button. Once on, the fountain apparatus can be adjusted in any direction within a 180 degree arc by using the joystick and pointing it in the desired
+direction. Once done, press the second button to activate the water pump. Press the button again to deactivate the water pump, and press the first button again to turn off the device.
+
+Finally, it's important to note that a handful of debug functions can be accessed via the device's serial. While I would normally remove these at the completion of a project to save space, I felt that I should leave them intact this
+time as they help illustrate some of the steps taken while constructing the project.
+
+Circuit TinkerCAD Link: https://www.tinkercad.com/things/ceUrfYcU2JQ
+
+Parts Used:
+
+- Arduino Uno
+- Servo Motor
+- Joystick
+- Breadboard
+- Button x2
+- LED Lights x2
+- Fish Tank Water Pump (Self-Supplied) and rubber hose
+- 220 Ohm Resistors x2
+- 10k Resistors x2
+- Countless jumper wires
+- Various recycled styrofoam cuts
+- Plastic sheeting
+- Several strips of thin plywood
+- An old tupperware container to contain the device
+- Nearly half a roll of duct tape
